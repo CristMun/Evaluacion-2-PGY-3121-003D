@@ -1,1 +1,3 @@
-# Evaluacion-2-HTML
+Integrantes:
+Cristobal Muñoz
+Anibal Calviqueo
