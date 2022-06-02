@@ -1,0 +1,99 @@
+tml lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo Autos</title>
+            <!--JQUERY-->
+            <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merienda+One">
+            <!--BOOTSTRAP-->
+            <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+            <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">    
+           
+</head>
+
+<!--NavBar-->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark" >
+    <a class="navbar-brand" href="index.html">
+        <img src="img/TODOAUTOS-LOGO.png" alt="logo" height="100">
+      </a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item ">
+        <a class="nav-link" href="index.html">Inicio <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Todos los Autos</a>
+      </li>
+      <li class="nav-item ">
+        <a class="nav-link disabled" href="#">Vende tu auto</a>
+      </li>
+      <li class="nav-item active">
+        <a class="nav-link " href="formulary.html">Unete</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Contactanos</a>
+      </li>
+      
+    </ul>
+  </div>
+  </nav>
+ <!--NavBar-->
+
+<body>
+    <div class="formulary">
+        <div class="form">
+            <h2>Registrarse</h2>
+            <p>Para vender un vehiculo debes iniciar sesion o registrarte</p>
+
+          <form class="form" action="#" method="post" onsubmit="return validarCaracteres();">
+            <input type="text" name="nombre" placeholder="Nombre">
+          
+          <!--
+            <input type="text" id="txt_apellido" minlength="3" placeholder="Apellido" required />
+            <input type="text" id="txt_rut" minlength="9" maxlength="10" placeholder="Rut" required/>
+            
+            <input width="10px" type="date" id="date_fechanac" required/>
+            <input type="text" id="txt_telefono" minlength="9" maxlength="9" placeholder="Telefono" required/>
+            <input type="email" id="txt_correo" minlength="3" placeholder="Correo" required/>
+            <br>
+           <table>
+                <select name="opt_comuna" id="opt_comuna" required>
+                    <option class="disabled" value="">Ingrese comuna</option>
+                    <option value="San Joaquin">San Joaquin</option>
+                    <option value="Providencia">Providencia</option>
+                    <option value="Santiago">Santiago</option>
+                </select>
+
+           </table>
+
+            <table class="formulary-page">
+                <p>Seleccione su tipo de cuenta:</p>
+                <td>
+                    <th>
+                        <input type="radio" id="vendedor" name="Tipo_cuenta" value="Vendedor" required>
+                        <label for="html">Vendedor</label>
+                    </th>
+                    <th>
+                        <input type="radio" id="comprador" name="Tipo_cuenta" value="Comprador">
+                        <label for="css">Comprador</label><br>
+                    </th>
+                </td>
+            </table>
+            
+          -->
+            <!--Botones-->
+            <input type="button" value="Enviar" onclick="validarCaracteres()">
+            
+            <!--Botones-->
+            
+            <p class="message">¿Tienes algun problema? <a href="#">Contactanos</a></p>
+          </form>
